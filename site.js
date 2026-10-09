@@ -1,0 +1,3 @@
+const labels={'board4-top.png':'Top assembly · Four-layer PCB','board4-bottom.png':'Bottom assembly · Four-layer PCB'};
+document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));const file=button.dataset.view;document.getElementById('board').src='assets/evidence/'+file;document.getElementById('board').alt=labels[file];document.getElementById('board-link').href='assets/evidence/'+file;document.getElementById('board-caption').textContent=labels[file];}));
+document.querySelectorAll('[data-open]').forEach(link=>link.addEventListener('click',()=>{document.getElementById(link.dataset.open).open=true;}));
