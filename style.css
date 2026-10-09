@@ -13,3 +13,41 @@
 .rf-highlights{margin-bottom:1.4rem;padding-bottom:.5rem;border-bottom:1px solid currentColor;}
 .rf-highlights p{margin:.65rem 0;}
 .contact-intro{max-width:38rem;line-height:1.6;margin:0 0 1.5rem;}
+
+/* Portfolio review: preserve the existing palette, typography, and card language. */
+.featured-studies{margin-top:32px;align-items:start}
+.featured-studies .study-major{background:#f3f5f7}
+.collection-heading h2{font-size:2rem}
+.project-collection .project-grid{margin-bottom:32px}
+.project-copy,.study,.current-grid article>div,.current-grid article,.board-study>div{min-width:0}
+.project h3,.study h3,.current h3{overflow-wrap:break-word}
+.project-image>a{display:block;width:100%}
+.project-image.si img{object-fit:contain}
+.detail-figure{margin:24px 0}
+.detail-figure img{height:auto;object-fit:contain;border:1px solid var(--line)}
+.detail-figure figcaption{font-size:.8rem;line-height:1.5;margin-top:10px}
+.detail a:not(.project-image),.detail-figure figcaption a{text-decoration:underline;text-underline-offset:3px}
+.debug-steps{padding-left:22px}.debug-steps li+li{margin-top:8px}
+.current .detail{color:#c2ccd8}.current .mini-results span{color:#c2ccd8}
+.current .mini-results{border-color:#415063}.current summary{border-color:#7f8fa4;color:#fff}
+.current .caption{color:#c2ccd8}
+.current .table-scroll th,.current .table-scroll td{border-color:#7f8fa4}
+.intro-links .resume-link{font-weight:600;border-bottom-color:var(--ink)}
+summary{min-height:44px;gap:15px}summary span{flex-shrink:0}
+.view-buttons button{min-height:44px}
+.table-scroll:focus-visible{outline-offset:2px}
+.evidence-cover img{object-fit:contain}
+.study .mini-results{margin:22px 0}.study .mini-results+details{margin-top:0}
+:focus-visible{outline-color:#507d2f}.current :focus-visible{outline-color:var(--lime)}
+@media(max-width:600px){
+ .nav{flex-wrap:wrap;row-gap:8px;padding-top:12px;padding-bottom:12px}
+ .nav nav{flex-wrap:wrap;gap:6px 20px}.nav nav a{min-height:36px;display:inline-flex;align-items:center}
+ .featured-studies{grid-template-columns:1fr}
+ .study h3,.project h3{font-size:1.65rem;line-height:1.16}
+ .result-grid strong{overflow-wrap:anywhere}
+ .current-grid article{gap:15px}.current .mini-results strong{font-size:1.4rem}
+ .contact-bottom{flex-wrap:wrap;gap:18px}
+ .collection-heading h2{font-size:1.75rem}
+ .intro-links a{min-height:40px;display:inline-flex;align-items:center;gap:6px}
+ .detail-figure{margin:20px 0}
+}
