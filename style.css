@@ -51,3 +51,6 @@ summary{min-height:44px;gap:15px}summary span{flex-shrink:0}
  .intro-links a{min-height:40px;display:inline-flex;align-items:center;gap:6px}
  .detail-figure{margin:20px 0}
 }
+
+/* Personal presentation photo at the end of About. */
+.about-photo{margin-top:32px;max-width:420px}.about-photo img{width:100%;height:auto;border-radius:5px}.about-photo a{display:block}
